@@ -24,53 +24,82 @@ class MainWindow(QMainWindow):
         self.current_password = ""
         
         # 设置窗口属性
-        self.setWindowTitle("密码生成器 - 作者：高芳嘉 2025年3月1日")
-        self.setMinimumSize(800, 600)
+        self.setWindowTitle("密码生成器")
+        self.setMinimumSize(900, 650)
         
         # 设置主窗口样式
         self.setStyleSheet("""
             QMainWindow {
-                background-color: #2D2D2D;
+                background-color: #F5F6FA;
             }
             QLabel {
-                color: #ECF0F1;
+                color: #2C3E50;
                 font-size: 14px;
+                font-weight: 500;
             }
             QPushButton {
-                background-color: #3498DB;
+                background-color: #4C84FF;
                 color: white;
                 border: none;
-                padding: 8px;
-                border-radius: 4px;
+                padding: 10px 15px;
+                border-radius: 6px;
                 font-size: 14px;
+                font-weight: 500;
             }
             QPushButton:hover {
-                background-color: #2980B9;
+                background-color: #3461FF;
+            }
+            QPushButton:pressed {
+                background-color: #2C3E50;
             }
             QSpinBox, QLineEdit {
-                background-color: #34495E;
-                color: #ECF0F1;
-                border: none;
-                padding: 5px;
-                border-radius: 4px;
+                background-color: #FFFFFF;
+                color: #2C3E50;
+                border: 1px solid #E1E8ED;
+                padding: 8px;
+                border-radius: 6px;
+                font-size: 13px;
+            }
+            QSpinBox:focus, QLineEdit:focus {
+                border: 2px solid #4C84FF;
             }
             QCheckBox {
-                color: #ECF0F1;
+                color: #2C3E50;
+                font-size: 13px;
+                spacing: 8px;
+            }
+            QCheckBox::indicator {
+                width: 18px;
+                height: 18px;
+                border-radius: 4px;
+                border: 2px solid #E1E8ED;
+            }
+            QCheckBox::indicator:checked {
+                background-color: #4C84FF;
+                border-color: #4C84FF;
             }
             QProgressBar {
                 border: none;
-                border-radius: 4px;
+                border-radius: 6px;
                 text-align: center;
+                background-color: #E1E8ED;
+                height: 12px;
             }
             QProgressBar::chunk {
-                background-color: #27AE60;
-                border-radius: 4px;
+                background-color: #4C84FF;
+                border-radius: 6px;
             }
             QTextEdit {
-                background-color: #34495E;
-                color: #ECF0F1;
-                border: none;
-                border-radius: 4px;
+                background-color: #FFFFFF;
+                color: #2C3E50;
+                border: 1px solid #E1E8ED;
+                border-radius: 6px;
+                padding: 10px;
+                font-size: 13px;
+                line-height: 1.5;
+            }
+            QTextEdit:focus {
+                border: 2px solid #4C84FF;
             }
         """)
         

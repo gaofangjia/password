@@ -39,11 +39,7 @@
 python main.py
 ```
 
-## 作者
-
-*   高芳嘉
-
-## 如何贡献 (可选)
+## 如何贡献
 
 1.  Fork 本仓库。
 2.  创建一个新的分支 (`git checkout -b feature/AmazingFeature`)。
